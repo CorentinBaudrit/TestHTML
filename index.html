@@ -19,7 +19,9 @@ function closeWin() {
 }
 window.close();
 </script>
-<a href="javascript:window.open('','_self').close();">close</a>
+<a href="blablabla" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);">
+    If you click on this the window will be closed after 1000ms
+</a>
 
 </body>
 </html>
