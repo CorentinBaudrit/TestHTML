@@ -2,26 +2,15 @@
 <html>
 <body>
 
-<button onclick="openWin()">Open "myWindow"</button>
+
 <button onclick="closeWin()">Close "myWindow"</button>
 
 <script>
-var myWindow;
-
-function openWin() {
-  myWindow = window.open("", "myWindow", "width=200,height=100");
-  myWindow.document.write("<p>This is 'myWindow'</p>");
-  closeWin()
-}
 
 function closeWin() {
-  myWindow.close();
+  window.close();
 }
 window.close();
 </script>
-<a href="blablabla" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);">
-    If you click on this the window will be closed after 1000ms
-</a>
-
 </body>
 </html>
